@@ -9,7 +9,8 @@ class _Cities extends StatelessWidget {
   );
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: 100,
+    return SizedBox(
+      height: context.height * 0.15,
       child: ListView(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,

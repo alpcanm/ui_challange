@@ -13,4 +13,8 @@ class Texts {
       'https://a.cdn-hotels.com/gdcs/production5/d1996/54fdb73f-eee5-4612-a3e7-6fc7ed2f7bee.jpg?impolicy=fcrop&w=800&h=533&q=medium';
   static const String urlPoland =
       'https://i.natgeofe.com/k/6eb7149d-9876-40ac-9bf7-d261931ddb56/poland-warsaw_16x9.jpg?w=1200';
+  static const String cardUrl2 =
+      'https://beachdunyasi.com/wp-content/uploads/2020/05/Jmkv.jpg';
+  static const String cardUrl1 =
+      'https://p4.wallpaperbetter.com/wallpaper/299/901/190/beach-indian-ocean-sand-sandy-beach-wallpaper-preview.jpg';
 }

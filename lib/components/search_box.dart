@@ -8,7 +8,7 @@ class _SearchBox extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-         Flexible(
+        Flexible(
             child: Card(
           elevation: 4,
           shadowColor: Colors.white,
@@ -27,23 +27,9 @@ class _SearchBox extends StatelessWidget {
             ),
           ),
         )),
-        Card(
-          color: Theme.of(context).primaryColor,
-          shadowColor: Theme.of(context).primaryColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          elevation: 8,
-          child: InkWell(
-              borderRadius: const BorderRadius.all(Radius.circular(10)),
-              onTap: () {},
-              child: const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Icon(
-                  Icons.skateboarding,
-                  color: Colors.white,
-                ),
-              )),
+        const GradientCard(
+          iconData: Icons.bar_chart,
+          iconSize: 24,
         )
       ],
     );
