@@ -1,0 +1,43 @@
+name: ui_challange
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^2.3.1
+  flutter_svg: ^1.0.3
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+  fonts:
+    - family: Gorgita
+      fonts:
+        - asset: assets/fonts/Gordita Regular.otf       
+    - family: TechnaSans
+      fonts:
+        - asset: assets/fonts/TechnaSans-Regular.otf
+    - family: Tahoma
+      fonts:
+        - asset: assets/fonts/tahoma.ttf
+
+  assets:
+    - assets/svg/
+    - assets/svg/
+
+  uses-material-design: true
+
