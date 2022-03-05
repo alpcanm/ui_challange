@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ui_challange/pages/home_page.dart';
+import 'package:ui_challange/pages/home_page/home_page.dart';
 
 import '../components/texts.dart';
 import '../extension/context_extension.dart';

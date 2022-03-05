@@ -34,7 +34,7 @@ class _BottomNavBarState extends State<_BottomNavBar> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: '.'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.notifications_rounded), label: '.'),
-            BottomNavigationBarItem(icon: Icon(Icons.aod), label: '.'),
+            BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: '.'),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: '.'),
           ],
           currentIndex: _selectedIndex,

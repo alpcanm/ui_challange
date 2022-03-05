@@ -1,17 +1,19 @@
 library home_page;
 
 import 'package:flutter/material.dart';
-import 'package:ui_challange/components/gradient_card.dart';
 import 'package:ui_challange/extension/context_extension.dart';
+import 'package:ui_challange/models/product.dart';
+import 'package:ui_challange/pages/detail_page/detail_page.dart';
 
-import '../components/texts.dart';
+import '../../components/gradient_card.dart';
+import '../../components/texts.dart';
 
-part '../components/header.dart';
-part '../components/search_box.dart';
-part '../components/cities.dart';
-part '../components/cards.dart';
-part '../components/bottom_nav_bar.dart';
-part '../components/popular_cards.dart';
+part 'components/header.dart';
+part 'components/search_box.dart';
+part 'components/cities.dart';
+part 'components/cards.dart';
+part 'components/bottom_nav_bar.dart';
+part 'components/popular_cards.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

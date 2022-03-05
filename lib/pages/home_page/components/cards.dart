@@ -7,13 +7,15 @@ class _CardList extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: context.height * 0.38,
-      child: ListView(
+      child: ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        children: const [
-          _CustomCard(url: Texts.cardUrl1),
-          _CustomCard(url: Texts.cardUrl2),
-        ],
+        itemCount: productList.length,
+        itemBuilder: (context, index) {
+          return _CustomCard(
+            product: productList[index],
+          );
+        },
       ),
     );
   }
@@ -22,9 +24,9 @@ class _CardList extends StatelessWidget {
 class _CustomCard extends StatelessWidget {
   const _CustomCard({
     Key? key,
-    required this.url,
+    required this.product,
   }) : super(key: key);
-  final String url;
+  final Product product;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -35,7 +37,13 @@ class _CustomCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.0),
         ),
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => DetailPage(product: product)),
+            );
+          },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -49,7 +57,7 @@ class _CustomCard extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
                     child: Image.network(
-                      url,
+                      product.photoURL ?? '',
                     ),
                   ),
                 ),
