@@ -4,7 +4,7 @@ class Texts {
   static const String onBoard1Text =
       '''The hotel and resort business is one of the best and loyal business in the global market. We are the agency that helps to book you a good room in a suitable palace at a reasonable price.''';
   static const String fabText = 'Get Started';
-  static const String comment =  '''Ea non tempor et laborum proident laborum aliquip tempor aliquip excepteur aliqua culpa in eu. Dolore commodo eu velit commodo id id. Labore proident velit occaecat reprehenderit ullamco aliqua reprehenderit exercitation. nostrud mollit amet. Pariatur deserunt amet exercitation duis   Read more...''';
+  static const String comment =  '''Ea non tempor et laborum proident laborum aliquip tempor aliquip excepteur aliqua culpa in eu. Dolore commodo eu velit commodo id id. Labore proident velit occaecat reprehenderit ullamco aliqua reprehenderit exercitation. nostrud mollit amet. Pariatur deserunt amet exercitation duis''';
 
   static const String urlIndia =
       'https://img.emg-services.net/HtmlPages/HtmlPage2067/india-cover-photo.jpg';

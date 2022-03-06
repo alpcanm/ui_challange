@@ -9,6 +9,12 @@ class CustomTheme {
   );
   static ThemeData light() {
     return ThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            primary: _primary,
+            padding: const EdgeInsets.all(0),
+          ),
+        ),
         primaryColor: _primary,
         brightness: Brightness.light,
         appBarTheme: const AppBarTheme(
@@ -28,7 +34,6 @@ class CustomTheme {
   // 4
   static ThemeData dark() {
     return ThemeData(
-    
       brightness: Brightness.dark,
       appBarTheme: AppBarTheme(
         foregroundColor: Colors.white,
