@@ -11,14 +11,22 @@ class _Header extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
-          children: const [
-            Padding(
+          children: [
+            const Padding(
               padding: EdgeInsets.all(8.0),
               child: CircleAvatar(
                 child: FlutterLogo(),
               ),
             ),
-            Text('Hello, Alp Can'),
+            Row(
+              children: [
+                Text('Hello,', style: GoogleFonts.roboto()),
+                Text(
+                  user.name,
+                  style: Theme.of(context).textTheme.bodyText1,
+                ),
+              ],
+            ),
           ],
         ),
         Card(

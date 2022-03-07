@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/on_board_page.dart';
+import 'pages/on_borad_page/on_board_page.dart';
 import 'theme/custom_theme.dart';
 
 void main() {

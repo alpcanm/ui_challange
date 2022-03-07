@@ -30,22 +30,4 @@ class CustomTheme {
         ),
         textTheme: lightTextTheme);
   }
-
-  // 4
-  static ThemeData dark() {
-    return ThemeData(
-      brightness: Brightness.dark,
-      appBarTheme: AppBarTheme(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.grey[900],
-      ),
-      floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.green,
-      ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
-      ),
-    );
-  }
 }

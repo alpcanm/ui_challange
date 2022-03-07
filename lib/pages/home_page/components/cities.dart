@@ -11,19 +11,20 @@ class _Cities extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: context.height * 0.15,
-      child: ListView(
+      child: ListView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
-        children: [
-          const _Column(title: 'India', URL: Texts.urlIndia),
-          _divider,
-          const _Column(title: 'Newyork', URL: Texts.urlNewyork),
-          _divider,
-          const _Column(title: 'Australia', URL: Texts.urlAustralia),
-          _divider,
-          const _Column(title: 'Poland', URL: Texts.urlPoland),
-          _divider,
-        ],
+        itemCount: circleCitiesList.length,
+        itemBuilder: (context, index) {
+          return Row(
+            children: [
+              _divider,
+              _Column(
+                  URL: circleCitiesList[index].url,
+                  title: circleCitiesList[index].title),
+            ],
+          );
+        },
       ),
     );
   }
@@ -43,7 +44,7 @@ class _Column extends StatelessWidget {
       children: [
         CircleAvatar(
           backgroundImage: NetworkImage(URL),
-          maxRadius: 30,
+          maxRadius: 25,
         ),
         const Divider(),
         Text(
