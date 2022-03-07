@@ -4,8 +4,8 @@ I tried to make a clone [this](https://www.figma.com/community/file/107101010291
 
 ## Getting Started
 
-![This is an image](readme_assets/ss1.png)
-![This is an image](readme_assets/ss2.png)
-![This is an image](readme_assets/ss4.png)
-![This is an image](readme_assets/ss3.png)
-![This is an image](readme_assets/ss5.png)
+- ![This is an image](readme_assets/ss1.png)
+- ![This is an image](readme_assets/ss2.png)
+- ![This is an image](readme_assets/ss4.png)
+- ![This is an image](readme_assets/ss3.png)
+- ![This is an image](readme_assets/ss5.png)
